@@ -1,0 +1,30 @@
+:root {
+    --bg-img-width: calc(100% / 3);
+}
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#bg-img {
+    height: 100%;
+    width: var(--bg-img-width);
+    background-image: url(images/wil-stewart-T26KCgCPsCI-unsplash.jpg);
+    background-size: cover;
+}
+
+#txt-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: calc(100% - var(--bg-img-width));
+    height: 100%;
+}
+.text {
+    border: 0.5px solid black;
+    width: 100%;
+    height: calc(100% / 3);
+}
