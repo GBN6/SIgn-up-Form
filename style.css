@@ -24,7 +24,7 @@ body {
 }
 .logo {
     position: absolute;
-    top: 18.5%;
+    top: 14%;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@ body {
 }
 h1{
     color: white;
-    font-size: clamp(1rem, 5vw, 4rem);
+    font-size: clamp(1rem, 4vw, 3rem);
 }
 h2 {
     font-size: clamp(1rem, 2vw, 1.5rem);
