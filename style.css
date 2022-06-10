@@ -120,7 +120,7 @@ input:valid {
 }
 
 .createAcc {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     color: white;
     font-weight: 800;
     border: none;
