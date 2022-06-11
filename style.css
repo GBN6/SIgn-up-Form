@@ -1,5 +1,5 @@
 :root {
-    --bg-img-width: calc(100% / 3);
+    --bg-img-width: calc(100% - 65%);
     --bg-color-desc: #f9fafb;
 }
 body {
@@ -78,7 +78,7 @@ h2 {
 }
 
 .description{
-    width: 60%;
+    width: 70%;
 }
 form {
     width: min(600px, 80% );
@@ -114,9 +114,16 @@ input:focus-visible {
     box-shadow: 1px 1px 3px grey;
 }
 
+input:invalid:focus {
+    background-color: rgb(255, 147, 165);
+    border: 1px solid red;
+    box-shadow: 1px 1px 3px grey;
+}
+
 input:valid {
-    /* border: 1px solid green;
-    box-shadow: 1px 1px 3px grey; */
+    background-color: rgb(157, 255, 157);
+    border: 1px solid green;
+    box-shadow: 1px 1px 3px grey;
 }
 
 .createAcc {
@@ -144,6 +151,10 @@ input:valid {
     color: #173138;
 }
 
+abbr {
+    border: none;
+    text-decoration: none;
+}
 
 
 

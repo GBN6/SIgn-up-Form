@@ -31,28 +31,28 @@
                 <h3>Please fill out this form!</h3>
                 <ul>
                     <li>
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName"  minlength="2" maxlength="15"  name="user-firstName">
+                        <label for="firstName">First Name <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
+                        <input type="text" id="firstName"  minlength="2" maxlength="15"  name="user-firstName" required>
                     </li>
                     <li>
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" minlength="2" maxlength="15" name="user-lastName">
+                        <label for="lastName">Last Name <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
+                        <input type="text" id="lastName" minlength="2" maxlength="15" name="user-lastName" required>
                     </li>
                     <li>
-                        <label for="mail">Email</label>
-                        <input type="email" id="mail" name="user-mail">
+                        <label for="mail">Email <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
+                        <input type="email" id="mail" name="user-mail" required>
                     </li>
                     <li>
-                        <label for="phoneNumber">Phone number</label>
-                        <input type="tel" id="phoneNumber" min="9" max="9" placeholder="123456789" name="user-phoneNumber">
+                        <label for="phoneNumber">Phone number <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
+                        <input type="tel" id="phoneNumber" min="9" max="9" placeholder="123456789" pattern="[0-9]{9}" name="user-phoneNumber" required>
                     </li>
                     <li>
-                        <label for="password">Password</label>
-                        <input class="error" type="password" id="password" name="user-password">
+                        <label for="password">Password <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
+                        <input class="error" type="password" id="password" name="user-password" required>
                     </li>
                     <li>
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input class="error" type="password" id="confirmPassword">
+                        <label for="confirmPassword">Confirm Password <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
+                        <input class="error" type="password" id="confirmPassword" required>
                     </li>
                 </ul>
                 <div class="btn-txt">
