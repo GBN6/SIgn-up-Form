@@ -1,6 +1,6 @@
 :root {
     --bg-img-width: calc(100% - 65%);
-    --bg-color-desc: #f9fafb;
+    --bg-color-desc: white;
 }
 body {
     font-family:sans-serif;
@@ -75,6 +75,8 @@ h2 {
     width: 100%;
     box-shadow: 0px 5px 10px grey;
     z-index: 10;
+    background-color: hsla(193, 42%, 15%, 0.205);
+    padding-bottom: 2%;
 }
 
 .description{
@@ -160,7 +162,7 @@ input:valid {
 }
 .btn-txt {
     position: absolute;
-    margin-top: 32px;
+    margin-top: 48px;
 }
 
 a {
