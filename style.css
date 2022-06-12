@@ -155,10 +155,11 @@ input:valid {
     top: 150px;
 }
 
-.logIn {
-    font-weight: bolder;
+a {
+    text-decoration: none;
     color: #173138;
-}
+    font-weight: bolder;
+  }
 
 abbr {
     border: none;

@@ -12,6 +12,27 @@ const passwordConfirm = document.querySelector('#confirmPassword');
 const passwordConfirmError = document.querySelector('#password-confirm-error');
 
 
+function passwordCheck(e)
+{
+    if (password.validity.patternMismatch)
+    {
+        
+        const currentPassword = password.value;
+        const regexCapital = /[A-Z]/g;
+        const regexDigit = /[0-9]/g;
+        let errorMsg = ''
+        regexCapital.test(currentPassword) ? errorMsg += '' : errorMsg += 'Missing at least 1 capital letter.\n'
+        regexDigit.test(currentPassword) ? errorMsg += '' : errorMsg += 'Missing at least 1 one digit.\n'
+        currentPassword.length < 7 ? errorMsg += 'Password must be a least 6 characters.\n' : errorMsg += ''
+        passwordError.textContent = errorMsg;
+    }
+    else 
+    {
+        passwordError.textContent = '';
+    }
+};
+
+
 
 
 firstName.addEventListener('input', e => {
@@ -29,4 +50,9 @@ email.addEventListener('input', e => {
 
 phoneNumber.addEventListener('input', e => {
     phoneNumber.validity.patternMismatch ? phoneNumberError.textContent = "Please enter in a 9 digit phone number" : phoneNumberError.textContent = '';
-})
+});
+
+password.addEventListener('input', passwordCheck)
+passwordConfirm.addEventListener('input', e => {
+    passwordConfirm.value !== password.value ? passwordConfirmError.textContent = 'Password do not match' : passwordConfirmError.textContent = ''
+});
