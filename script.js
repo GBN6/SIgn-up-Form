@@ -2,7 +2,7 @@ const firstName = document.querySelector('#firstName');
 const firstNameError = document.querySelector('#first-name-error');
 const lastName = document.querySelector('#lastName');
 const lastNameError = document.querySelector('#last-name-error');
-const email = document.querySelector('#email');
+const email = document.querySelector('#mail');
 const emailError = document.querySelector('#email-error');
 const phoneNumber = document.querySelector('#phoneNumber');
 const phoneNumberError = document.querySelector('#phone-number-error');
@@ -22,3 +22,11 @@ firstName.addEventListener('input', e => {
 lastName.addEventListener('input', e => {
     lastName.value === '' ? lastNameError.textContent = "Please type in your last name." : lastNameError.textContent = ''
 });
+
+email.addEventListener('input', e => {
+    email.validity.typeMismatch ? emailError.textContent = "Please type in a valid email. ex.(smith.john@gmail.com)" : emailError.textContent = ''
+});
+
+phoneNumber.addEventListener('input', e => {
+    phoneNumber.validity.patternMismatch ? phoneNumberError.textContent = "Please enter in a 9 digit phone number" : phoneNumberError.textContent = '';
+})
