@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="bg-img">
@@ -33,26 +34,32 @@
                     <li>
                         <label for="firstName">First Name <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
                         <input type="text" id="firstName"  minlength="2" maxlength="15"  name="user-firstName" required>
+                        <div id='first-name-error' class='error'></div>
                     </li>
                     <li>
                         <label for="lastName">Last Name <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
                         <input type="text" id="lastName" minlength="2" maxlength="15" name="user-lastName" required>
+                        <div id='last-name-error' class='error'></div>
                     </li>
                     <li>
                         <label for="mail">Email <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
                         <input type="email" id="mail" name="user-mail" required>
+                        <div id='email-error' class='error'></div>
                     </li>
                     <li>
                         <label for="phoneNumber">Phone number <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
                         <input type="tel" id="phoneNumber" min="9" max="9" placeholder="123456789" pattern="[0-9]{9}" name="user-phoneNumber" required>
+                        <div id='phone-number-error' class='error'></div>
                     </li>
                     <li>
                         <label for="password">Password <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
-                        <input class="error" type="password" id="password" name="user-password" required>
+                        <input class="error" type="password" id="password" name="user-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+                        <div id='password-error' class='error'></div>
                     </li>
                     <li>
                         <label for="confirmPassword">Confirm Password <abbr title="This field is mandatory" aria-label="required">*</abbr> </label>
-                        <input class="error" type="password" id="confirmPassword" required>
+                        <input class="error" type="password" id="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+                        <div id='password-confirm-error' class='error'></div>
                     </li>
                 </ul>
                 <div class="btn-txt">

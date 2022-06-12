@@ -65,7 +65,7 @@ h2 {
 }
 
 .desc{
-    margin-bottom: 24px;
+    padding-bottom: 24px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -115,7 +115,7 @@ input:focus-visible {
 }
 
 input:invalid:focus {
-    background-color: rgb(255, 147, 165);
+    background-color: rgb(255, 188, 199);
     border: 1px solid red;
     box-shadow: 1px 1px 3px grey;
 }
