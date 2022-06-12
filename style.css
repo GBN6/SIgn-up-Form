@@ -95,6 +95,8 @@ li {
     display: flex;
     flex-direction: column;
     padding: 3% 3% 0 0;
+    position: relative;
+    margin-bottom: 15px;
 }
 
 label{
@@ -116,7 +118,7 @@ input:focus-visible {
 
 input:invalid:focus {
     background-color: rgb(255, 188, 199);
-    border: 1px solid red;
+    border: 1px solid rgb(255, 69, 100);;
     box-shadow: 1px 1px 3px grey;
 }
 
@@ -125,6 +127,13 @@ input:valid {
     border: 1px solid green;
     box-shadow: 1px 1px 3px grey;
 }
+
+.error {
+    font-size: .7rem;
+    color: rgb(255, 69, 100);
+    position: absolute;
+    top: 63px;
+  }
 
 .createAcc {
     font-size: clamp(1rem, 2vw, 1.5rem);
