@@ -73,7 +73,7 @@ h2 {
 .form-section {
     padding-left: 7%;
     width: 100%;
-    box-shadow: 0px 5px 10px grey;
+    box-shadow: 0px 5px 10px rgb(78, 78, 78);
     z-index: 10;
     background-color: hsla(193, 42%, 15%, 0.205);
     padding-bottom: 2%;
